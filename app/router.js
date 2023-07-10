@@ -7,5 +7,10 @@ export default class Router extends EmberRouter {
 }
 
 Router.map(function () {
-  this.route('charts');
+  this.route('charts', function () {
+    this.route('echart');
+    this.route('chartjs');
+    this.route('plotly');
+    this.route('apex');
+  });
 });

@@ -1,4 +1,8 @@
 {{page-title 'Charts'}}
-<h1>Charts </h1>
-<EmberChart @type='line' @data={{this.data}} @width='250' @height='250' />
+<nav>
+  <LinkTo @route='charts.echart'>Echart</LinkTo>
+  <LinkTo @route='charts.chartjs'>Chart.js</LinkTo>
+  <LinkTo @route='charts.plotly'>Plotly</LinkTo>
+  <LinkTo @route='charts.apex'>Apex Charts</LinkTo>
+</nav>
 {{outlet}}
